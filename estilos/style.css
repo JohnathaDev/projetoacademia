@@ -32,10 +32,10 @@ nav {
     text-align: end;
     min-width: 280px;
 } 
-@media (max-width:450px) {
+@media (max-width:500px) {
     nav{
         display: flex;
-        max-width: 450px;
+        max-width: 440px;
         margin: auto;
         text-align: center;
         justify-content: center;
