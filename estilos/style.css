@@ -32,6 +32,18 @@ nav {
     text-align: end;
     min-width: 280px;
 } 
+@media (max-width:450px) {
+    nav{
+        display: flex;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+        padding: 20px;
+    }
+}
 nav > a {
     text-decoration: none;
     color: white;
