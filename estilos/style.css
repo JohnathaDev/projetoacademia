@@ -35,6 +35,7 @@ nav {
 @media (max-width:450px) {
     nav{
         display: flex;
+        max-width: 450px;
         margin: auto;
         text-align: center;
         justify-content: center;
@@ -42,6 +43,12 @@ nav {
         color: white;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
         padding: 20px;
+    }
+    nav > a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border-radius: 0px 0px 10px 10px;
     }
 }
 nav > a {
@@ -121,7 +128,7 @@ main {
 }
 .cards ul {
     list-style-position: inside;
-    list-style-type: '\2705';
+    list-style-type: '\2705\0020';
     padding: 10px;
 }
 .cards li {
