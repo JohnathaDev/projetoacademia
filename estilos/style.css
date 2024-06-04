@@ -11,14 +11,18 @@ body {
     background-image: url('../imagens/fundo-academia.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 header {
     padding: 30px;
+    padding-left: 50px;
     font-variant: small-caps;
     background-color: black;
     color: white;
     font-size: 1.3em;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.400);
+    min-width: 200px;
 }
 nav {
     padding: 20px;
@@ -26,6 +30,7 @@ nav {
     color: white;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
     text-align: end;
+    min-width: 280px;
 } 
 nav > a {
     text-decoration: none;
@@ -44,7 +49,8 @@ h1#plano {
     padding: 50px;
     font-weight: 900;
     font-size: 3em;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.300);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+    color: white;
     display: block;
 }
 main {
@@ -52,19 +58,94 @@ main {
     width: 80%;
     gap: 15px;
     margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 900px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 15px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .cards {
-    display: inline-block;
-    width: 300px;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    min-width: 300px;
+    height: 500px;
+    color: white;
     padding: 10px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(40, 40, 40);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.700);
+}
+@media (max-width: 900px) {
+    .cards {
+        display: flex;
+        width: 500px;
+        max-height: 500px;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(40, 40, 40);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.700);
+    }
+}
+.planos {
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+    padding-bottom: 10px;
+}
+.cards h3 {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+    font-size: 1.5em;
+}
+.cards ul {
+    list-style-position: inside;
+    list-style-type: '\2705';
+    padding: 10px;
+}
+.cards li {
+    padding-bottom: 5px;
+}
+.cards a {
+    font-weight: bold;
+    color: white;
+}
+.cards:hover {
+    background-color: rgb(55, 55, 55);
+    transform: translate(-5px, -3px);
+    transition-duration: 0.3s;
+}
+.assinatura {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: darkred;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: auto;
+
+}
+.assinatura:hover {
+    font-size: 1.2em;
+    background-color: red;
+    cursor: pointer;
+    transition-duration: 0.3s;
 }
 footer {
     text-align: center;
     background-color: black;
     color: white;
     font-weight: bold;
-    margin-top: 50px;
 }
