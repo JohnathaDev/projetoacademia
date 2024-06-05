@@ -151,7 +151,8 @@ main {
 }
 .assinatura {
     display: flex;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -160,7 +161,6 @@ main {
     height: 50px;
     border-radius: 10px;
     margin-top: auto;
-
 }
 .assinatura:hover {
     font-size: 1.2em;
