@@ -26,29 +26,25 @@ header {
     min-width: 200px;
 }
 nav {
+    position: sticky;
+    top: 0px;
     padding: 20px;
     background-color: rgb(10, 10, 10);
     color: white;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
     text-align: end;
-    min-width: 280px;
 } 
 @media (max-width:500px) {
     nav{
         display: flex;
         max-width: 400px;
+        min-width: 300px;
         margin: auto;
         text-align: center;
         justify-content: center;
         align-items: center;
         color: white;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
-        padding: 20px;
-        border-radius: 0px 0px 10px 10px;
-    }
-    nav > a {
-        text-decoration: none;
-        color: white;
         padding: 20px;
         border-radius: 0px 0px 10px 10px;
     }
